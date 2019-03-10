@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shop'
 ]
 
 MIDDLEWARE = [
@@ -105,9 +106,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/dev/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ja'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tokyo'
 
 USE_I18N = True
 
@@ -125,6 +126,7 @@ PROJECT_NAME = os.path.basename(BASE_DIR)
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = '/var/www/{}/static'.format(PROJECT_NAME)
+ALLOWED_HOSTS = ['localhost', '.pythonanywhere.com']
 # S.Sato add End
 
 STATIC_URL = '/static/'
